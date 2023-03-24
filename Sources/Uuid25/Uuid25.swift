@@ -1,4 +1,4 @@
-/// Primary value type containing the Uuid25 representation of a UUID.
+/// The primary value type containing the Uuid25 representation of a UUID.
 public struct Uuid25: Hashable, LosslessStringConvertible {
   /// The 25-digit Uuid25 representation of `self`: `3ud3gtvgolimgu9lah6aie99o`.
   public let description: String
@@ -250,7 +250,7 @@ extension Uuid25: Codable {
   }
 }
 
-/// Error parsing a UUID string representation.
+/// An error parsing a UUID string representation.
 public struct ParseError: Error {
   let debugMessage: String
 }
@@ -316,7 +316,7 @@ func convertBase(src: [UInt8], srcBase: UInt, dstBase: UInt, dstSize: Int) throw
   return dst
 }
 
-/// O(1) map from ASCII code points to Base36 digit values.
+/// An O(1) map from ASCII code points to Base36 digit values.
 let decodeMap: [UInt8] = [
   0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
   0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
