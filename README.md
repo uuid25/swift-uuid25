@@ -2,6 +2,8 @@
 
 [![GitHub tag](https://img.shields.io/github/v/tag/uuid25/swift-uuid25)](https://github.com/uuid25/swift-uuid25)
 [![License](https://img.shields.io/github/license/uuid25/swift-uuid25)](https://github.com/uuid25/swift-uuid25/blob/main/LICENSE)
+[![Swift Compatibility](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fuuid25%2Fswift-uuid25%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/uuid25/swift-uuid25)
+[![Platform Compatibility](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fuuid25%2Fswift-uuid25%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/uuid25/swift-uuid25)
 
 Uuid25 is an alternative UUID representation that shortens a UUID string to just
 25 digits using the case-insensitive Base36 encoding. This library provides
@@ -39,8 +41,9 @@ assert(d.urn == "urn:uuid:e7a1d63b-7117-4423-8988-afcf12161878")
 
 ## Add swift-uuid25 as a package dependency
 
-To add this library to your Xcode project as a dependency, select **File > Add
-Packages** and enter the package URL: https://github.com/uuid25/swift-uuid25
+To add this library to your Xcode project as a dependency, select **File** >
+**Add Packages** and enter the package URL:
+https://github.com/uuid25/swift-uuid25
 
 To use this library in a SwiftPM project, add the following line to the
 dependencies in your Package.swift file:
@@ -61,3 +64,7 @@ And, include `Uuid25` as a dependency for your target:
 ## License
 
 Licensed under the Apache License, Version 2.0.
+
+## See also
+
+- [swift-uuid25 - Swift Package Index](https://swiftpackageindex.com/uuid25/swift-uuid25)
