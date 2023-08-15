@@ -250,6 +250,8 @@ extension Uuid25: Codable {
   }
 }
 
+extension Uuid25: Sendable {}
+
 /// An error parsing a UUID string representation.
 public struct ParseError: Error {
   let debugMessage: String
